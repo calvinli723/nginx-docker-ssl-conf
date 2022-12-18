@@ -1,0 +1,9 @@
+nginx:
+  image: nginx:latest
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /etc/letsencrypt/live/pyraisis.com/fullchain.pem:/etc/nginx/certs/fullchain.pem
+    - /etc/letsencrypt/live/pyraisis.com/privkey.pem:/etc/nginx/certs/privkey.pem
+    - /home/adminramses/src/nginx/conf.d:/etc/nginx/conf.d
