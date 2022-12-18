@@ -6,4 +6,4 @@ nginx:
   volumes:
     - /etc/letsencrypt/live/yourdomain.com/fullchain.pem:/etc/nginx/certs/fullchain.pem
     - /etc/letsencrypt/live/yourdomain.com/privkey.pem:/etc/nginx/certs/privkey.pem
-    - /home/adminramses/src/nginx/conf.d:/etc/nginx/conf.d
+    - /path/to/your/nginx.conf:/etc/nginx/conf.d/nginx.conf
